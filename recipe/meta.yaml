@@ -17,7 +17,7 @@ source:
     - msvc_fixes.diff
 
 build:
-  number: 0
+  number: 1
   skip: true        # [win32 or (win and py2k) and py36]
   features:
     - vc14          # [win and py>=35]
@@ -27,9 +27,9 @@ requirements:
     - python                  # [win]
     - toolchain
     - cmake
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
   run:
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
 
 test:
   commands:
