@@ -18,18 +18,17 @@ source:
 
 build:
   number: 0
-  skip: true        # [win32 or (win and py2k) and py36]
-  features:
-    - vc14          # [win and py>=35]
+  skip: true        # [win32 or (win and vc<14) and py36]
 
 requirements:
   build:
-    - python                  # [win]
-    - toolchain
     - cmake
-    - hdf5 1.8.17|1.8.17.*
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - hdf5
   run:
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5
 
 test:
   commands:
