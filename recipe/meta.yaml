@@ -17,7 +17,7 @@ source:
     - msvc_fixes.diff
 
 build:
-  number: 1
+  number: 2
   skip: true        # [win32 or (win and vc<14) and py36]
 
 requirements:
