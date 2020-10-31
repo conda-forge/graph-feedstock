@@ -37,8 +37,9 @@ test:
 
 about:
   home: http://www.andres.sc/graph.html
-  license: BSD 3-clause
-  license_family: BSD
+  license: BSD-3-Clause
+  # Taken from http://www.andres.sc/graph.html
+  license_file: LICENSE
   summary: 'Graphs and Graph Algorithms in C++, including Minimum Cost (Lifted) Multicuts'
 
 extra:
