@@ -24,7 +24,7 @@ requirements:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - unix   # [unix]
+    - make   # [unix]
   host:
     - hdf5
   run:
