@@ -17,14 +17,14 @@ source:
     - msvc_fixes.diff
 
 build:
-  number: 2
-  skip: true        # [win32 or (win and vc<14) and py36]
+  number: 3
 
 requirements:
   build:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make   # [unix]
   host:
     - hdf5
   run:
