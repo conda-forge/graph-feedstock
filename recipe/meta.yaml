@@ -18,13 +18,13 @@ source:
 
 build:
   number: 3
-  skip: true        # [win32 or (win and vc<14) and py36]
 
 requirements:
   build:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - unix   # [unix]
   host:
     - hdf5
   run:
