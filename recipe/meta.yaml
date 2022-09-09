@@ -17,7 +17,7 @@ source:
     - msvc_fixes.diff
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
