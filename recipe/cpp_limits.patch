@@ -1,0 +1,24 @@
+diff --git a/include/andres/graph/minimum-spanning-tree.hxx b/include/andres/graph/minimum-spanning-tree.hxx
+index 17b846c..7bc63e0 100755
+--- a/include/andres/graph/minimum-spanning-tree.hxx
++++ b/include/andres/graph/minimum-spanning-tree.hxx
+@@ -5,6 +5,7 @@
+ #include <queue>
+ #include <stdexcept>
+ #include <vector>
++#include <limits>
+ 
+ #include "andres/functional.hxx"
+ #include "subgraph.hxx"
+diff --git a/include/andres/graph/twocut/kernighan-lin.hxx b/include/andres/graph/twocut/kernighan-lin.hxx
+index 0c05c40..a5561bb 100755
+--- a/include/andres/graph/twocut/kernighan-lin.hxx
++++ b/include/andres/graph/twocut/kernighan-lin.hxx
+@@ -3,6 +3,7 @@
+ #define ANDRES_GRAPH_TWOCUT_KERNIGHAN_LIN_HXX
+ 
+ #include <vector>
++#include <limits>
+ 
+ #include "andres/graph/complete-graph.hxx"
+ 
